@@ -14,7 +14,8 @@ class RomanNumbertest(unittest.TestCase):
         self.assertEqual(romanos.romano_a_entero('K'), 'no existe ese numero romano')
         self.assertEqual(romanos.romano_a_entero(''), 0)
         self.assertEqual(romanos.romano_a_entero('MMMM'), "no cumple regla 3 repeticiones")
-        self.assertEqual(romanos.romano_a_entero('MLIV'), "no cumple orden")
+        self.assertEqual(romanos.romano_a_entero('MCMLXXXIX'), 1989)
+        self.assertEqual(romanos.romano_a_entero('MIM'), "resta no permitida")
 
 if __name__=='__main__':
     unittest.main ()       
