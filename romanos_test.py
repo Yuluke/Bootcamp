@@ -17,5 +17,9 @@ class RomanNumbertest(unittest.TestCase):
         self.assertEqual(romanos.romano_a_entero('MCMLXXXIX'), 1989)
         self.assertEqual(romanos.romano_a_entero('MIM'), "resta no permitida")
 
+    def test_numbers_decimal(self):
+        self.assertEqual(romanos.entero_a_romano(1233), 'MCCXXXIII')
+        self.assertEqual(romanos.entero_a_romano(1733), 'MDCCXXXIII')
+
 if __name__=='__main__':
     unittest.main ()       
